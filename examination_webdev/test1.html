@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <style class="Background">body {
+        background-image: url("https://lh3.googleusercontent.com/proxy/dBzDIwVXgKF8fpgXW5Vf0MXjOm-sVHvG_8lLS--Q0WvmRcwXskkAHon7U2FY7tqu0fTrsoEyEQWm0PjRQ5eaJsbFddwgxb73E5yPzaIkG_xlnfs9U2aGX3vd-j_CpD68tyl9U-IeAPcLmWOsIDrkO9sD");
+    }</style>
     <link rel="stylesheet" href="css/base.css">
     </link>
     <link rel="stylesheet" href="css/navbar.css">
@@ -14,11 +17,54 @@
 
     <div id="myNavbar" class="navbar">
     </div>
+    
+    <div style="padding-left:16px" class="InTheMiddle">
+        <h2>Numbers</h2>
 
-    <div style="padding-left:16px">
-        <h2>Test1</h2>
-        <p>Test1.</p>
+        <p2>Here are some number genrators if someone needs them.</p2>
+
+        <p>Random number between 1-10</p>
+
+        <!--https://www.w3schools.com/jsref/jsref_random.asp-->
+        <button onclick="randomNumber10()">Generate</button>
+
+        <p id="Numb10"></p>
+
+        <script>
+            function randomNumber10(){
+                var x =Math.floor((Math.random()* 10) + 1);
+                document.getElementById("Numb10").innerHTML = x;
+            }
+        </script>
+
+        <p>Random number between 1-100</p>
+
+        <button onclick="randomNumber100()">Generate</button>
+
+        <p id="Numb100"></p>
+
+        <script>
+            function randomNumber100(){
+                var x =Math.floor((Math.random()* 100) + 1);
+                document.getElementById("Numb100").innerHTML = x;
+            }   
+        </script>
+
+        <p>Random number between 1-1000</p>
+
+        <button onclick="randomNumber1000()">Generate</button>
+
+        <p id="Numb1000"></p>
+
+        <script>
+        function randomNumber1000(){
+            var x =Math.floor((Math.random()* 1000) + 1);
+            document.getElementById("Numb1000").innerHTML = x;
+            }   
+        </script>
+        
     </div>
+    
 
 </body>
 

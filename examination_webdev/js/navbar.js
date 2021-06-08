@@ -7,8 +7,8 @@ function addNavBar() {
     // The value is the corresponding html file to swap to on click.
     let navigation = {
         "Home": "index.html",
-        "Test1": "test1.html",
-        "Test2": "test2.html",
+        "Random Number": "test1.html",
+        "Random Monke": "test2.html",
     };
 
     let navbar = document.getElementById("myNavbar");
